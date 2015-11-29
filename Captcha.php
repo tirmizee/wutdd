@@ -17,15 +17,19 @@
 		}
 		public function getRightOperand(){
 			if ($this->pattern == 1) {
-				$result = "";
-				switch ($this->right_operand) {
-					case 1:$result = "one";break;
-					case 2:$result = "two";break;
-					case 3:$result = "three";break;
-					case 4:$result = "four";break;
-					case 5:$result = "five";break;
-				}
-				return $result;
+				$result = array(0 => 'zero' ,
+								1 => 'one' ,
+								2 => 'two' ,
+								3 => 'three' ,
+								4 => 'four' ,
+								5 => 'five' ,
+								6 => 'six' ,
+								7 => 'seven' ,
+								8 => 'eight' ,
+								9 => 'nine' ,
+								10 => 'ten' );
+				
+				return $result[$this->right_operand];
 			}
 		}
 	}
